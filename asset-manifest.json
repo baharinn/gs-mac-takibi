@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gs-mac-takibi/static/css/main.6fa9661f.css",
+    "main.js": "/gs-mac-takibi/static/js/main.a69641ef.js",
+    "static/js/453.259a6c37.chunk.js": "/gs-mac-takibi/static/js/453.259a6c37.chunk.js",
+    "index.html": "/gs-mac-takibi/index.html",
+    "main.6fa9661f.css.map": "/gs-mac-takibi/static/css/main.6fa9661f.css.map",
+    "main.a69641ef.js.map": "/gs-mac-takibi/static/js/main.a69641ef.js.map",
+    "453.259a6c37.chunk.js.map": "/gs-mac-takibi/static/js/453.259a6c37.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6fa9661f.css",
+    "static/js/main.a69641ef.js"
+  ]
+}
