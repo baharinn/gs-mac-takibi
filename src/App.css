@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+header{
+  background:#a5002a;
+  color:white;
+  padding:30px;
+  text-align:center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1{
+  font-size:32px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+header p{
+  margin-top:10px;
+}
+
+.container{
+  padding:40px;
+}
+
+.filterBox{
+  display:flex;
+  gap:15px;
+  margin-bottom:25px;
+  justify-content:center;
+}
+
+.filterBox button{
+  padding:10px 20px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  background:#ddd;
+  font-weight:bold;
+}
+
+.filterBox button.active{
+  background:#a5002a;
+  color:white;
+}
+
+.nextMatch{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  margin-bottom:30px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cards{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap:20px;
+}
+
+.card{
+  padding:20px;
+  border-radius:20px;
+  color:white;
+  font-weight:bold;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  transition:transform 0.3s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.card.win{
+  background:linear-gradient(135deg,#8b0000,#eece76);
+}
+
+.card.lose{
+  background:#222;
+}
+
+.card.draw{
+  background:#b3b3b3;
+  color:black;
+}
+
+.teamRow{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+}
+
+.teamLogo{
+  width:5px;
+}
+
+.playerGrid{
+  margin-top:40px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+  gap:20px;
+}
+
+.playerCard{
+  background:white;
+  padding:15px;
+  border-radius:15px;
+  text-align:center;
+  cursor:pointer;
+  transition:0.3s;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.playerCard:hover{
+  transform:scale(1.05);
+}
+
+.playerCard img{
+  width:80px;
+  border-radius:50%;
+  margin-bottom:10px;
+}
+
+.popupBg{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+}
+
+.popup{
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  width:320px;
+  text-align:center;
+  animation:popupAnim 0.3s ease;
+}
+
+@keyframes popupAnim{
+  from{
+    transform:scale(0.8);
+    opacity:0;
+  }
+  to{
+    transform:scale(1);
+    opacity:1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.popup img{
+  width:120px;
+  border-radius:50%;
+  margin-bottom:10px;
 }
 
-.App-link {
-  color: #61dafb;
+.popup button{
+  margin-top:15px;
+  padding:8px 18px;
+  border:none;
+  background:#a5002a;
+  color:white;
+  border-radius:10px;
+  cursor:pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer{
+  margin-top:50px;
+  background:black;
+  color:white;
+  padding:20px;
+  text-align:center;
 }
